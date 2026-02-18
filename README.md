@@ -1,4 +1,4 @@
-# 🏛 The Historical Court  
+#  The Historical Court  
 ## Multi-Agent System with Google ADK
 
 โครงงานนี้พัฒนาระบบ **Multi-Agent System** ด้วย Google Agent Development Kit (ADK)  
@@ -7,7 +7,7 @@
 
 ---
 
-# 🎯 วัตถุประสงค์
+# วัตถุประสงค์
 
 1. ออกแบบสถาปัตยกรรม Multi-Agent ตามรูปแบบ Sequential + Parallel + Loop  
 2. วิเคราะห์ข้อมูลจาก Wikipedia อย่างมีโครงสร้าง  
@@ -17,7 +17,7 @@
 
 ---
 
-# 🏗 สถาปัตยกรรมระบบ (System Architecture)
+# สถาปัตยกรรมระบบ (System Architecture)
 <img width="1312" height="897" alt="image" src="https://github.com/user-attachments/assets/0c806392-4704-4aaa-97d6-3a2ed93c32b7" />
 
 ระบบแบ่งเป็น 4 ขั้นตอนหลัก
@@ -39,7 +39,7 @@
 ## Step 2: The Investigation (Parallel)
 
 
-### 🟢 Agent A – The Admirer
+###  Agent A – The Admirer
 ค้นหาเฉพาะ:
 - achievements  
 - awards  
@@ -54,7 +54,7 @@
 
 ---
 
-### 🔴 Agent B – The Critic
+###  Agent B – The Critic
 ค้นหาเฉพาะ:
 - controversy  
 - criticism  
@@ -107,7 +107,7 @@
 
 ---
 
-# 🧠 การจัดการ State
+# การจัดการ State
 
 โครงสร้าง Session State:
 
@@ -121,7 +121,11 @@
   "judge_notes": [],
   "official_title_candidates": []
 }
-# Tools ที่ใช้
+---
+---
+
+#  Tools ที่ใช้
+
 | Tool | หน้าที่ |
 |------|---------|
 | `normalize_topic_tool` | แปลงชื่อเป็น Official Wikipedia Title |
@@ -132,7 +136,12 @@
 | `write_verdict_file` | บันทึกไฟล์รายงาน |
 | `exit_loop` | ควบคุมการจบ loop |
 | `wiki_tool` | ดึงข้อมูลจาก Wikipedia |
-# Flow การทำงาน
+
+---
+
+#  Flow การทำงาน
+
+```
 User Input
     ↓
 Receptionist (Sequential)
@@ -144,15 +153,32 @@ Judge (Loop)
 Clerk
     ↓
 Final Verdict File (.txt)
-# Output
+```
+
+---
+
+#  Output
+
+```
 final_verdicts_output/
 <topic>_YYYYMMDD_HHMMSS.txt
-# Run
+```
+
+---
+
+#  Run
+
+```bash
 python agent.py
+```
+
+ตัวอย่างหัวข้อที่ใช้ทดสอบ:
+
+```
 Genghis Khan
 Cold War
 Ada Lovelace
 ธรรมนัส พรหมเผ่า
+```
 
-
-# 
+---
