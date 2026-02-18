@@ -175,9 +175,6 @@ python agent.py
 ตัวอย่างหัวข้อที่ใช้ทดสอบ:
 
 ```
-Genghis Khan
-Cold War
-Ada Lovelace
 ธรรมนัส พรหมเผ่า
 ```
 
